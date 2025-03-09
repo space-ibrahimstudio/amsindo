@@ -1,0 +1,33 @@
+.cardDesc,
+.cardTitle {
+  align-self: stretch;
+  position: relative;
+  line-height: 140%;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.cardDesc {
+  font-size: var(--font-tiny);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-secondary);
+}
+
+.countCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: var(--pixel-150);
+  text-align: left;
+  font-size: var(--font-md);
+  color: var(--color-primary);
+  font-family: var(--font-jakarta);
+}

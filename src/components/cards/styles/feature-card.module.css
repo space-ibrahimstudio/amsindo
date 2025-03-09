@@ -1,0 +1,53 @@
+.cardIcon {
+  width: var(--pixel-50);
+  border-radius: 50%;
+  background-color: var(--color-hint);
+  height: var(--pixel-50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transit);
+}
+
+.cardDesc,
+.cardTitle {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.cardDesc {
+  font-size: var(--font-tiny);
+  line-height: 140%;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-secondary);
+}
+
+.featureCard {
+  flex: 1;
+  cursor: pointer;
+  border-radius: var(--pixel-20);
+  background-color: var(--color-foreground);
+  border: 1px solid rgba(13, 13, 20, 0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--pixel-20);
+  gap: var(--pixel-15);
+  text-align: left;
+  font-size: var(--font-sm);
+  color: var(--color-primary);
+  font-family: var(--font-jakarta);
+}
+
+.featureCard:hover .cardIcon {
+  background-color: var(--color-primary);
+}

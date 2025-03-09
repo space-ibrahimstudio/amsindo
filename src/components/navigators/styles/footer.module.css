@@ -1,0 +1,125 @@
+.itemLabel {
+  flex: 1;
+  position: relative;
+  line-height: 140%;
+  font-weight: 500;
+}
+
+.contactItem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--pixel-5);
+  text-align: left;
+  font-size: var(--font-xsm);
+  color: var(--color-secondary);
+  font-family: var(--font-inter);
+}
+
+.footerContact,
+.footerHead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footerContact {
+  align-self: stretch;
+  gap: var(--pixel-10);
+}
+
+.footerHead {
+  flex: 1;
+  gap: var(--pixel-30);
+  min-width: var(--pixel-350);
+}
+
+.menuTitle {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-sm);
+  line-height: 100%;
+  font-weight: 700;
+  font-family: var(--font-jakarta);
+  color: var(--color-secondary);
+}
+
+.footerMenu {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--pixel-10);
+  text-align: left;
+  font-size: var(--font-xsm);
+  color: rgba(13, 13, 20, 0.7);
+  font-family: var(--font-inter);
+}
+
+.socialsTitle {
+  position: relative;
+}
+
+.footerContent,
+.footerSocials {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footerSocials {
+  flex-direction: column;
+  gap: var(--pixel-10);
+  text-align: left;
+  font-size: var(--font-sm);
+  color: var(--color-secondary);
+  font-family: var(--font-jakarta);
+}
+
+.footerContent {
+  align-self: stretch;
+  border-radius: var(--pixel-15);
+  border: 1px solid rgba(13, 13, 20, 0.2);
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: var(--pixel-30);
+  gap: var(--pixel-30) var(--pixel-50);
+}
+
+.footerCopyright {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+}
+
+.footer {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--pixel-30) var(--pixel-60);
+  gap: var(--pixel-30);
+  text-align: center;
+  font-size: var(--font-xsm);
+  color: rgba(13, 13, 20, 0.5);
+  font-family: var(--font-inter);
+}
+
+@media screen and (min-width: 701px) and (max-width: 1120px) {
+  .footer {
+    padding: var(--pixel-15) var(--pixel-30);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: var(--pixel-15);
+  }
+}
