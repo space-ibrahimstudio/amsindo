@@ -3,11 +3,11 @@ name: Amsindo v0.1.0
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   web-deploy:
-    name: Deploy on Master
+    name: Deploy on Main
     runs-on: ubuntu-latest
 
     strategy:
@@ -22,9 +22,6 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: Copying environment variables
-        run: cp .env.prod.example .env
 
       - name: Installing required packages
         run: npm install
